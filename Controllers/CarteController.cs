@@ -5,7 +5,7 @@ using ProjetAPI.Context;
 
 namespace ProjetAPI.Controllers
 {
-    [Route("Api/[controller]")] 
+    [Route("Api/[controller]")]
     [ApiController]    
     
     public class CarteController : ControllerBase 
@@ -50,9 +50,8 @@ namespace ProjetAPI.Controllers
             {
                 _context.Cartes.Remove(carte);
                 await _context.SaveChangesAsync();
-                return Ok("");
+                return Ok("Carte supprimée !");
             }
-
             return BadRequest();
         }
         /*[HttpPut("{id:int}")]
