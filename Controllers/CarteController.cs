@@ -5,7 +5,7 @@ using ProjetAPI.Context;
 
 namespace ProjetAPI.Controllers
 {
-    [Route("Api/[controller]")]
+    [Route("Api/[controller]")] 
     [ApiController]    
     
     public class CarteController : ControllerBase 
