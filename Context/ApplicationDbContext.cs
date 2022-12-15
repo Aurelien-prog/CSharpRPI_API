@@ -4,6 +4,8 @@ namespace ProjetAPI.Context
 {
     public class ApplicationDbContext: DbContext
     {
+        internal object idC;
+
         public ApplicationDbContext ( DbContextOptions<ApplicationDbContext> options ): base(options)
         {
 
